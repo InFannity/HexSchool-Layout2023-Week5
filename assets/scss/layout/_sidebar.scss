@@ -4,8 +4,8 @@
     .nav{
         --bs-nav-link-color: #198754;
         --bs-nav-link-hover-color: #198754;
+        color: #198754;
         &::before {
-            color: #198754;
             content: '';
             position: absolute;
             left: 0;
@@ -13,8 +13,17 @@
             height: 32px;
             border-left: 4px solid #198754;
         }
-    }
-    .nav-link{
-        color : black;
+        &::after {
+            content: '';
+            color: #198754;
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 32px;
+            border-left: 4px solid #198754;
+        }
+        &-link{
+            color : black;
+        }
     }
 }
